@@ -31,7 +31,7 @@ Route::get('privacy-policy', function(){
 });
 
 Route::get('share', function(Illuminate\Http\Request $req){
-    return Redirect::to('intent://com.customlymade/share/#Intent;scheme=customlymade;package=com.customlymade;S.id='.$req->input('asset').';end');
+    return Redirect::to('intent://com.labelmeup/share/#Intent;scheme=labelmeup;package=com.labelmeup;S.id='.$req->input('asset').';end');
 });
 
 Route::group(['middleware' => ['web']], function () {
